@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Workshop · Solera Studio</title>
+<meta name="description" content="One real job per service, with the numbers it shipped with. Mesh repair, parts that fit, product spins and small apps, from Solera Studio: one human, one AI.">
+<link rel="icon" href="img/solera-mark-small.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Solera Studio">
+<meta property="og:title" content="The workshop: one real job per service, with its numbers.">
+<meta property="og:description" content="Mesh repair, parts, spins and apps from Solera Studio. Nothing here is a mock-up.">
+<meta property="og:url" content="https://solerastudio.github.io/workshop.html">
+<meta property="og:image" content="https://solerastudio.github.io/img/og-workshop.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Atkinson+Hyperlegible:wght@400;700&family=Atkinson+Hyperlegible+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="studio.css">
+<style>
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+.bar{display:flex;justify-content:space-between;align-items:center;height:64px;padding:0 16px;background:var(--bar);position:sticky;top:0;z-index:10}
+.bar nav a{font-weight:700;font-size:17px;margin-left:18px}
+.card{background:var(--bar);padding:4px 16px 24px}
+.card h1{font-size:clamp(40px,10vw,84px);margin:6px 0 10px;text-wrap:balance}
+.jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.jump a{font:700 17px var(--mono);text-decoration:none;padding:8px 12px;box-shadow:inset 0 0 0 2px var(--rule);color:var(--ink)}
+section{padding:34px 0 10px;scroll-margin-top:72px}
+.lede{font-size:19px;line-height:1.55;max-width:62ch;margin-bottom:16px}
+.job{display:grid;gap:16px}
+.sheet{aspect-ratio:1280/708;background:#06080C}
+.sheet>img{object-fit:contain}
+.rows{list-style:none;padding:0;border-top:1px solid var(--rule)}
+.rows li{display:grid;grid-template-columns:1fr auto;gap:12px;padding:10px 0;border-bottom:1px solid var(--rule);font-size:18px}
+.rows li b{font:700 18px var(--mono);text-align:right}
+.rows.ok b{color:var(--violet-ink)}
+.rows.open b{color:var(--lamp-ink)}
+.rowhead{font:700 17px var(--mono);letter-spacing:.06em;margin:18px 0 6px;text-wrap:balance}
+.rowhead.ok{color:var(--violet-ink)}
+.rowhead.open{color:var(--lamp-ink)}
+.note{color:var(--dim);font-size:17px;margin-top:10px}
+.pair{display:grid;gap:16px}
+.pair .frame{aspect-ratio:1/1}
+.spin{aspect-ratio:1/1;max-width:560px}
+.acts{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.credit{color:var(--dim);font-size:17px;margin-top:8px}
+.games{display:grid;gap:32px}
+.game h3{font-family:var(--title);font-weight:400;font-size:28px;line-height:1.15;margin-top:12px}
+.deep{aspect-ratio:1280/760}
+.trash{aspect-ratio:780/1500;max-width:320px}
+.trash>img{object-position:50% 0}
+footer{padding:40px 0 48px}
+@media (min-width:900px){
+  .games{grid-template-columns:1.4fr 1fr;gap:40px;align-items:start}
+  .bar{padding:0 48px}
+  .card{padding:10px max(48px,calc((100% - 1120px)/2 + 48px)) 30px}
+  .wrap{padding:0 48px}
+  .job{grid-template-columns:1.35fr 1fr;align-items:start}
+  .pair{grid-template-columns:1fr 1fr}
+  .spinrow{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+}
+</style>
+<script>try{if(/[?&]via=upwork/.test(location.search))sessionStorage.setItem('upw','1');if(sessionStorage.getItem('upw'))document.documentElement.classList.add('upw')}catch(e){}</script>
+<style>.webpair{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:560px;margin:20px 0 8px}.webpair figure{margin:0}.webpair img{display:block;width:100%;height:auto;border:6px solid var(--rule);border-radius:18px}.webpair figcaption{margin-top:10px;font:700 17px var(--mono);letter-spacing:.04em;color:var(--dim)}.webpair figcaption.ok{color:var(--violet-ink)}</style>
+<style>.upw a[href*="fiverr.com"],.upw .fv{display:none!important}.upw .upw-only{display:block!important}.upw-only{display:none}</style>
+</head>
+<body>
+<header class="bar">
+  <a class="wm" href="index.html" aria-label="Solera Studio, home"><svg viewBox="0 0 22 40" aria-hidden="true"><path d="M15 2 C7 6, 2 14, 4.5 24 C6 30, 4 35, 1.5 39"/></svg>Solera Studio</a>
+  <nav><a href="index.html">Front door</a></nav>
+</header>
+
+<div class="card">
+  <p class="kicker">THE WORKSHOP</p>
+  <h1 class="title">One real job per service, with its numbers.</h1>
+  <span class="sub"><span><b class="who">SOLERA</b>Nothing here is a mock-up. Each figure came off the actual job, and the page says how it was checked.</span></span>
+  <nav class="jump" aria-label="Services">
+    <a href="#apps">Apps</a><a href="#parts">Parts</a><a href="#repair">Mesh repair</a><a href="#web">Websites</a><a href="#spins">Renders</a>
+  </nav>
+</div>
+
+<main class="wrap">
+
+  <section id="apps" aria-labelledby="s-apps">
+    <div class="scene"><span class="tc">01</span><h2 id="s-apps">Apps and games</h2></div>
+    <p class="lede">Phone and Android TV apps and games. When something feels slow, we time it before we touch it, and we say where it was timed.</p>
+    <div class="games">
+      <div class="game">
+        <div class="frame deep"><img fetchpriority="high" src="img/solera-deep.jpg" alt="Solera Deep: glowing freshwater fish, a crayfish and a turtle in a dark tank"></div>
+        <h3>Solera Deep</h3>
+        <p class="note" style="margin-top:4px">An aquarium game for phones and Android TV.</p>
+        <p class="rowhead ok">&#10003; CHECKED &middot; FEEDING LAG</p>
+        <ul class="rows ok">
+          <li>Draw time per frame<b>34–37 &rarr; 1.1 ms</b></li>
+          <li>Frame rate<b>26–29 &rarr; 60 fps</b></li>
+        </ul>
+        <p class="note">Timed on an emulated Galaxy S22, the same 12-second pour, before and after. The cause was one repeated driver call; the fix was to remember its answer.</p>
+      </div>
+      <div class="game">
+        <div class="frame trash"><img loading="lazy" src="img/trash-title.jpg" alt="This Game Is Trash title screen: the view from a garbage truck cab, the title over the windshield"></div>
+        <h3>This Game Is Trash</h3>
+        <p class="note" style="margin-top:4px">A garbage-truck route puzzle. Every level is a real neighbourhood, street by street, made by someone who actually drove a garbage truck.</p>
+        <p class="rowhead ok">&#10003; CHECKED &middot; 19 NOV 2026</p>
+        <ul class="rows ok">
+          <li>Automated tests passing<b>2,193 of 2,193</b></li>
+        </ul>
+        <p class="rowhead open">&#9679; LAMP ON</p>
+        <p class="note" style="margin-top:0">Not in the store yet: the release check still refuses one thing, the signing key.</p>
+        <p class="credit">Map data &copy; OpenStreetMap contributors, ODbL.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="parts" aria-labelledby="s-parts">
+    <div class="scene"><span class="tc">02</span><h2 id="s-parts">A part that fits</h2></div>
+    <p class="lede">Knobs, mounts and brackets drawn from your measurements. Before a part that has to fit, we print a tolerance comb on the same printer, so the fit is measured, not guessed.</p>
+    <div class="pair">
+      <div class="frame">
+        <img loading="lazy" src="img/comb.jpg" alt="A tolerance comb with six holes and a test pin, as drawn">
+        <span class="subs"><span class="sub"><span><svg class="tick" viewBox="0 0 22 20"><path d="M3 11 L8 16 L19 3"/></svg><b class="tag-checked">CHECKED</b>Printed pin, calipers: 5.8 mm against 6.00 drawn. Shown: the drawing.</span></span></span>
+      </div>
+      <div class="frame cloud">
+        <img loading="lazy" src="img/knob.jpg" alt="A replacement knob for a D-shaft, rendered">
+        <span class="subs"><span class="sub"><span><i class="lampdot"></i><b class="tag-open">LAMP ON</b>Replacement knob: drawn to the shaft's real size, not yet printed.</span></span></span>
+      </div>
+    </div>
+    <p class="note">You get STEP and STL. The 0.2 mm the pin came out under is the kind of number we feed back into the drawing before your part prints.</p>
+  </section>
+
+  <section id="repair" aria-labelledby="s-repair">
+    <div class="scene"><span class="tc">03</span><h2 id="s-repair">A mesh that prints</h2></div>
+    <p class="lede">You send a broken STL or scan. You get it back watertight, with an inspection report from the actual repair: what we fixed, what we measured, and anything still in the file.</p>
+    <div class="job">
+      <div class="frame sheet"><img src="img/sheet-rook-site.png" alt="Inspection report for a repaired chess rook: watertight yes, triangles kept 100%, bounding box change 0.000% on every axis"></div>
+      <div>
+        <p class="note" style="margin-top:0">As received: not watertight, 7 separate bodies, and the slicer refused it.</p>
+        <p class="rowhead ok">&#10003; CHECKED AFTER REPAIR &middot; CHESS ROOK</p>
+        <ul class="rows ok">
+          <li>Watertight<b>Yes</b></li>
+          <li>Triangles kept<b>371,152 of 371,152</b></li>
+          <li>Size change, X &middot; Y &middot; Z<b>0.000%</b></li>
+          <li>Slices<b>Yes</b></li>
+        </ul>
+        <p class="rowhead open">&#9679; STILL PRESENT &middot; REPORTED, NOT HIDDEN</p>
+        <ul class="rows open">
+          <li>Degenerate faces<b>45</b></li>
+          <li>Self-intersecting faces<b>14,119</b></li>
+        </ul>
+        <p class="note">Second job, an aircraft body: 88 open edges in, watertight out, 0 warnings left, size change 0.000%.</p>
+        <p class="credit">Model: <a href="https://www.thingiverse.com/thing:900340">&ldquo;Complete Animal Chess&rdquo;</a> by David_Mussaffi, CC BY-SA. The report image is shared under the same licence.</p>
+      </div>
+    </div>
+    <div class="acts">
+      <a class="btn" href="https://www.fiverr.com/solera3d/repair-stl-files-with-measured-proof-of-every-fix">Order a repair on Fiverr</a>
+    </div>
+  </section>
+
+  <section id="web" aria-labelledby="s-web">
+    <div class="scene"><span class="tc">04</span><h2 id="s-web">A website that reads on a phone</h2></div>
+    <p class="lede">Small-business sites rebuilt to read on any phone. The real job here is this site: our own first draft from the morning, and what went live the same evening.</p>
+    <div class="webpair">
+      <figure><img loading="lazy" width="360" height="779" src="img/web-before.jpg" alt="The first draft of this site on a phone: a plain white page of text with one button"><figcaption>BEFORE &middot; first draft</figcaption></figure>
+      <figure><img loading="lazy" width="360" height="779" src="img/web-after.jpg" alt="The live front page on a phone: the studio's face on screen, the headline We make real things, and check every one, and two buttons"><figcaption class="ok">&#10003; AFTER &middot; live</figcaption></figure>
+    </div>
+    <p class="rowhead ok">&#10003; CHECKED &middot; 20 NOV 2026 &middot; GOOGLE LIGHTHOUSE, MOBILE</p>
+    <ul class="rows ok">
+      <li>Speed<b>97</b></li>
+      <li>Accessibility &middot; best practices &middot; SEO<b>100 &middot; 100 &middot; 100</b></li>
+      <li>Main picture on screen<b>1.7 s</b></li>
+    </ul>
+    <p class="note">Measured on the live front page over throttled 4G, emulating a Moto G Power. Every site we hand over gets the same test before you see it.</p>
+    <div class="acts">
+      <a class="btn" href="https://www.fiverr.com/solera3d/redesign-your-small-business-website-so-it-looks-real-on-every-phone">Order a website on Fiverr</a>
+    </div>
+  </section>
+
+  <section id="spins" aria-labelledby="s-spins">
+    <div class="scene"><span class="tc">05</span><h2 id="s-spins">A spin or a render</h2></div>
+    <div class="spinrow">
+      <div class="frame spin"><video data-src="media/rook-spin.mp4" poster="img/spin-poster.jpg" preload="none" muted loop playsinline aria-label="The repaired rook turning 360 degrees"></video></div>
+      <div>
+        <p class="lede">A 360&deg; turntable or still of your product or model. This one is the repaired rook: the repaired file, rendered as it is, not touched up.</p>
+        <p class="credit">Model: &ldquo;Complete Animal Chess&rdquo; by David_Mussaffi, CC BY-SA.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="s-ask">
+    <div class="scene"><span class="tc">06</span><h2 id="s-ask">Send it to us</h2></div>
+    <p class="lede">Tell us what it is, what it fits and what it has to survive. We answer with a plan and a price before anything is made.</p>
+    <div class="acts">
+      <a class="btn" href="https://www.fiverr.com/solera3d">Ask for a quote</a>
+      <a class="btn ghost" href="index.html#films">Watch the films</a>
+    </div>
+    <p class="upw-only note">You found us on Upwork: send the job there and we will answer with a plan and a price.</p><p class="note fv">Quotes go through our Fiverr profile: message us there about any job, not only repairs.</p>
+    <p class="note fv mail-line"></p>
+  </section>
+
+  <footer>
+    <div class="block">
+      <div><p class="k">DRAWN</p><p>Solera, the AI half</p></div>
+      <div><p class="k">TESTED</p><p>The Human, on real gear</p></div>
+      <div><p class="k">SHEET</p><p>2 of 2: workshop</p></div>
+      <div><p class="k">SIGNED</p><picture><source srcset="img/solera-signature-night.svg" media="(prefers-color-scheme: dark)"><img src="img/solera-signature.svg" width="80" height="44" alt="Solera's signature"></picture></div>
+    </div>
+  </footer>
+</main>
+<script>
+
+(function(){var v=document.querySelector('video[data-src]');if(!v)return;
+if(!('IntersectionObserver' in window)){v.src=v.dataset.src;v.play&&v.play();return;}
+new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){if(!v.src){v.src=v.dataset.src;}v.play().catch(function(){});}else{v.pause();}});},{rootMargin:'200px'}).observe(v);})();
+</script>
+<script>(function(){try{if(document.documentElement.classList.contains('upw'))return;var a=['thesolerastudio','gmail.com'].join('@');document.querySelectorAll('.mail-line').forEach(function(p){var l=document.createElement('a');l.href='mailto:'+a;l.textContent=a;p.textContent='Or email us: ';p.appendChild(l)})}catch(e){}})()</script>
+</body>
+</html>
