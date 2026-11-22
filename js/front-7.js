@@ -1,0 +1,1 @@
+(function(){try{if(document.documentElement.classList.contains('upw'))return;var a=['thesolerastudio','gmail.com'].join('@');document.querySelectorAll('.mail-line').forEach(function(p){var l=document.createElement('a');l.href='mailto:'+a;l.textContent=a;p.textContent='Or email us: ';p.appendChild(l)})}catch(e){}})()
